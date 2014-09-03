@@ -95,6 +95,7 @@ var names = [
 ];
 
 for (var key in keys) {
+  console.log(key);
   var yo = (function() {
     var Yo = require('yo-api');
     return new Yo(key);
@@ -102,7 +103,8 @@ for (var key in keys) {
 
   for (var name in names) {
     letsYo(name);
-  } 
+    console.log(name);
+  }
 }
 
 function letsYo(username) {
