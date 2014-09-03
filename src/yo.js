@@ -103,12 +103,12 @@ for (var key in keys) {
   })();
 
   for (var name in names) {
-    spam(name);
+    spam(yo, name);
     console.log(name);
   }
 }
 
-function spam(username) {
+function spam(yo, username) {
   console.log(username);
   yo.yo(username, function(err, res, body) {
     if (err) {
