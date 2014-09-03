@@ -22,7 +22,6 @@
     "gitio": "src/yo.js"
   },
   "dependencies": {
-    "async": "^0.9.0",
     "yo-api": "^1.0.0"
   }
 }

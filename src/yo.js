@@ -2,10 +2,6 @@
 
 'use strict';
 
-// Require modules
-var async = require('async');
-var yo = require('yo-api');
-
 // Load API Keys
 var keys = [
   process.env.KEY_ONE,
@@ -70,26 +66,52 @@ var keys = [
 
 // Load usernames
 var names = [
+  'a',
+  'b',
+  'c',
+  'd',
+  'e',
+  'f',
+  'g',
+  'h',
+  'i',
+  'j',
+  'k',
+  'l',
+  'm',
+  'n',
+  'o',
+  'p',
+  'q',
+  'r',
+  's',
+  't',
+  'u',
+  'v',
+  'w',
+  'x',
+  'y',
+  'z'
 ];
 
-function init() {
-  async.each(keys, function( file, callback) {
-    
-  });
+for (var key in keys) {
   var yo = (function() {
     var Yo = require('yo-api');
     return new Yo(key);
   })();
-  letsYo(username);
+
+  for (var name in names) {
+    letsYo(name);
+  } 
 }
 
-function letsYo(name) {
-  yo.yo(name, function(err, res, body) {
-    if (error) {
+function letsYo(username) {
+  yo.yo(username, function(err, res, body) {
+    if (err) {
       return console.log('Wtf just happened?');
     }
     else {
-      return console.log('Wtf just happened?'); 
+      return console.log('#hellyeah'); 
     }
   });
 }
