@@ -2,7 +2,7 @@
 
 'use strict';
 
-// Load API Keys
+// Load API Keys... probably better to use keys.json
 var keys = [
   process.env.KEY_ONE,
   process.env.KEY_TWO,
