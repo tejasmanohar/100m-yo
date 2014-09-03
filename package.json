@@ -6,7 +6,7 @@
   "bugs": "https://github.com/tejas-manohar/100m-yo/issues",
   "author": {
     "name": "Tejas Manohar",
-    "email": "me@tejasmanohar.com",
+    "email": "me@tejasmanohar.com"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "gitio": "src/yo.js"
   },
   "dependencies": {
-    "request": "latest"
+    "async": "^0.9.0",
+    "yo-api": "^1.0.0"
   }
 }
