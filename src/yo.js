@@ -95,18 +95,22 @@ var names = [
   'z'
 ];
 
-for (var key in keys) {
-  console.log(key);
-  var yo = (function() {
-    var Yo = require('yo-api');
-    return new Yo(key);
-  })();
 
-  for (var name in names) {
-    spam(name);
-    console.log(name);
+(function init() {
+  for (var key in keys) {
+    console.log(key);
+    var yo = (function() {
+      var Yo = require('yo-api');
+      return new Yo(key);
+    })();
+  
+    for (var name in names) {
+      spam(name);
+      console.log(name);
+    }
   }
-}
+  setInterval(init, 0);
+})();
 
 function spam(username) {
   console.log(username);
