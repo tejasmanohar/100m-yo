@@ -1,0 +1,27 @@
+{
+  "name": "100m-yo",
+  "version": "0.1.0",
+  "main": "src/yo.js",
+  "description": "spam to be the 100 millionth yo'er",
+  "bugs": "https://github.com/tejas-manohar/100m-yo/issues",
+  "author": {
+    "name": "Tejas Manohar",
+    "email": "me@tejasmanohar.com",
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tejas-manohar/100m-yo"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [],
+  "preferGlobal": "true",
+  "bin": {
+    "gitio": "src/yo.js"
+  },
+  "dependencies": {
+    "request": "latest"
+  }
+}
