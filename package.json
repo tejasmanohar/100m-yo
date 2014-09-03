@@ -22,6 +22,6 @@
     "gitio": "src/yo.js"
   },
   "dependencies": {
-    "yo-api": "^1.0.0"
+    "yo-api": "latest"
   }
 }

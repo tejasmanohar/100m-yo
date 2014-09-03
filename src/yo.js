@@ -66,6 +66,7 @@ var keys = [
 
 // Load usernames
 var names = [
+  'sudeepgg',
   'a',
   'b',
   'c',
@@ -102,12 +103,13 @@ for (var key in keys) {
   })();
 
   for (var name in names) {
-    letsYo(name);
+    spam(name);
     console.log(name);
   }
 }
 
-function letsYo(username) {
+function spam(username) {
+  console.log(username);
   yo.yo(username, function(err, res, body) {
     if (err) {
       return console.log('Wtf just happened?');
