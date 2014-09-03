@@ -6,6 +6,7 @@
 var async = require('async');
 var yo = require('yo-api');
 
+// Load API Keys
 var keys = [
   process.env.KEY_ONE,
   process.env.KEY_TWO,
@@ -67,36 +68,14 @@ var keys = [
   process.env.KEY_SIXTY
 ];
 
-var keys = [
-  'aa',
-  'bb',
-  'cc',
-  'dd',
-  'ee',
-  'ff',
-  'gg',
-  'hh',
-  'ii',
-  'jj',
-  'kk',
-  'll',
-  'mm',
-  'nn',
-  'oo',
-  'pp',
-  'qq',
-  'rr',
-  'ss',
-  'tt',
-  'uu',
-  'vv',
-  'ww',
-  'xx',
-  'yy',
-  'zz'
+// Load usernames
+var names = [
 ];
 
 function init() {
+  async.each(keys, function( file, callback) {
+    
+  });
   var yo = (function() {
     var Yo = require('yo-api');
     return new Yo(key);
@@ -105,12 +84,12 @@ function init() {
 }
 
 function letsYo(name) {
-  yo.yo(name, function() {
-    console.log("hell yeah!");
-    sub.save(function(err) {
-      if (err) {
-        console.log('Um, what just happened? O.o');
-      }
-    });
+  yo.yo(name, function(err, res, body) {
+    if (error) {
+      return console.log('Wtf just happened?');
+    }
+    else {
+      return console.log('Wtf just happened?'); 
+    }
   });
 }
